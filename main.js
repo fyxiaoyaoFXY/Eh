@@ -32,7 +32,9 @@ $(function(){
     var e=$(".main1");
     return new Handsontable(
         e.get(0),
-        {data:
+        {
+            title:'111',
+            data:
             [
                 ["Java","1","降","-0.01%"],
                 ["C","2","升","+2.44%"],
@@ -46,5 +48,7 @@ $(function(){
         // manualRowResize:!0,
         // manualColumnResize:!0,
         // rowHeaders:!0,
+        colWidths:150,
+        rowHeights:[40,40,40,40,40,40,40,40,40],
         colHeaders:["语言名称","排名","升或降","变化幅度"]})
 })
